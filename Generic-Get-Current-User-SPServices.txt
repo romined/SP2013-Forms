@@ -1,0 +1,7 @@
+$j(document).ready(function(){
+ var userName = $j().SPServices.SPGetCurrentUser({
+ fieldName: "Title",
+ debug: false
+ });
+ alert(userName);
+ });

@@ -1,0 +1,5 @@
+<script type="text/javascript" src="~SiteCollection/_layouts/15/jquery-1.10.2.min.js" ></script>
+<script type="text/javascript">
+var $j = jQuery.noConflict(true);
+$j(document).ready(function(){alert("It's Alive!!!");})
+</script>

@@ -1,0 +1,1 @@
+ <INPUT type="button" value="New RD Form" onClick="window.open('https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev/Lists/Record%20Data/RD_New.aspx')"> 
