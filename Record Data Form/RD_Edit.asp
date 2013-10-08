@@ -76,22 +76,7 @@
 	</xsl:template>
 	<xsl:template name="dvt_1.body">
 		<xsl:param name="Rows"/>
-		<tr>
-			<td class="ms-toolbar" nowrap="nowrap">
-				<table>
-					<tr>
-						<td width="99%" class="ms-toolbar" nowrap="nowrap"><IMG SRC="/_layouts/15/images/blank.gif" width="1" height="18"/></td>
-						<td class="ms-toolbar" nowrap="nowrap">
-							<SharePoint:SaveButton runat="server" ControlMode="Edit" id="savebutton1"/>
-						</td>
-						<td class="ms-separator">&#160;</td>
-						<td class="ms-toolbar" nowrap="nowrap" align="right">
-							<SharePoint:GoBackButton runat="server" ControlMode="Edit" id="gobackbutton1"/>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
+		
 		<tr>
 			<td class="ms-toolbar" nowrap="nowrap">
 				<SharePoint:FormToolBar runat="server" ControlMode="Edit"/>
@@ -307,6 +292,20 @@
 </script>
 </asp:Content>
 <asp:Content ContentPlaceHolderId="PlaceHolderBodyAreaClass" runat="server">
+<script type="text/javascript" src="~SiteCollection/_layouts/15/jquery-1.8.3.js" ></script>
+<script type="text/javascript" src="~SiteCollection/_layouts/15/jquery.SPServices-2013.01.js" ></script>
+<script type="text/javascript">
+var $j = jQuery.noConflict(true);
+function PreSaveAction()
+{
+  var r=confirm("Are you sure you want to submit this Record Data form?");
+if (r==false)
+  {
+  return false;
+  }
+  return true;
+}
+</script>
 <SharePoint:StyleBlock runat="server">
 .ms-bodyareaframe {
 	padding: 8px;
