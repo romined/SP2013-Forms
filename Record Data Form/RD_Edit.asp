@@ -242,10 +242,10 @@
 					</tr>										
 					<tr id="idAttachmentsRow">
 						<td nowrap="true" valign="top" class="ms-formlabel" width="20%">
-							<SharePoint:FieldLabel ControlMode="Edit" FieldName="Attachments" runat="server"/>
+							<SharePoint:FieldLabel ControlMode="Display" FieldName="Attachments" runat="server"/>
 						</td>
 						<td valign="top" class="ms-formbody" width="80%">
-							<SharePoint:FormField runat="server" id="AttachmentsField" ControlMode="Edit" FieldName="Attachments" __designer:bind="{ddwrt:DataBind('u','AttachmentsField','Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@Attachments')}"/>
+							<SharePoint:FormField runat="server" id="AttachmentsField" ControlMode="Display" FieldName="Attachments" __designer:bind="{ddwrt:DataBind('u','AttachmentsField','Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@Attachments')}"/>
 							<script>
           var elm = document.getElementById(&quot;idAttachmentsTable&quot;);
           if (elm == null || elm.rows.length == 0)
