@@ -80,22 +80,7 @@
 	</xsl:template>
 	<xsl:template name="dvt_1.body">
 		<xsl:param name="Rows"/>
-		<tr>
-			<td class="ms-toolbar" nowrap="nowrap">
-				<table>
-					<tr>
-						<td width="99%" class="ms-toolbar" nowrap="nowrap"><IMG SRC="/_layouts/15/images/blank.gif" width="1" height="18"/></td>
-						<td class="ms-toolbar" nowrap="nowrap">
-							<SharePoint:SaveButton runat="server" ControlMode="New" id="savebutton1"/>
-						</td>
-						<td class="ms-separator">&#160;</td>
-						<td class="ms-toolbar" nowrap="nowrap" align="right">
-							<SharePoint:GoBackButton runat="server" ControlMode="New" id="gobackbutton1"/>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
+		
 		<tr>
 			<td class="ms-toolbar" nowrap="nowrap">
 				<SharePoint:FormToolBar runat="server" ControlMode="New"/>
