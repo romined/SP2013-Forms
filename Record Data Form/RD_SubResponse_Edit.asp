@@ -69,8 +69,8 @@
 					</xsl:call-template>
 				</table>
 			</span>
-			<SharePoint:AttachmentUpload runat="server" ControlMode="Display"/>
-			<SharePoint:ItemHiddenVersion runat="server" ControlMode="Display"/>
+			<SharePoint:AttachmentUpload runat="server" ControlMode="Edit"/>
+			<SharePoint:ItemHiddenVersion runat="server" ControlMode="Edit"/>
 		</div>
 	</xsl:template>
 	<xsl:template name="dvt_1.body">
@@ -78,8 +78,8 @@
 		
 		<tr>
 			<td class="ms-toolbar" nowrap="nowrap">
-				<SharePoint:FormToolBar runat="server" ControlMode="Display"/>
-				<SharePoint:ItemValidationFailedMessage runat="server" ControlMode="Display"/>
+				<SharePoint:FormToolBar runat="server" ControlMode="Edit"/>
+				<SharePoint:ItemValidationFailedMessage runat="server" ControlMode="Edit"/>
 			</td>
 		</tr>
 		<xsl:for-each select="$Rows">
