@@ -224,7 +224,19 @@
 							<SharePoint:FormField runat="server" id="ff5{$Pos}" ControlMode="Edit" FieldName="Reviewer_Comments" __designer:bind="{ddwrt:DataBind('u',concat('ff5',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@Reviewer_Comments')}"/>
 							<SharePoint:FieldDescription runat="server" id="ff5description{$Pos}" FieldName="Reviewer_Comments" ControlMode="Edit"/>
 						</td>
-					</tr>										
+					</tr>	
+					<tr>
+						<td width="190px" valign="top" class="ms-formlabel">
+							<H3 class="ms-standardheader">
+								<nobr>Courtesy Copy</nobr>
+							</H3>
+						</td>
+						<td width="400px" valign="top" class="ms-formbody">
+							<SharePoint:FormField runat="server" id="ff31{$Pos}" ControlMode="Edit" FieldName="FormCC" __designer:bind="{ddwrt:DataBind('u',concat('ff31',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@FormCC')}"/>
+							<SharePoint:FieldDescription runat="server" id="ff31description{$Pos}" FieldName="FormCC" ControlMode="Edit"/>
+						</td>
+					</tr>
+					
 					<tr id="idAttachmentsRow">
 						<td nowrap="true" valign="top" class="ms-formlabel" width="20%">
 							<SharePoint:FieldLabel ControlMode="Display" FieldName="Attachments" runat="server"/>
