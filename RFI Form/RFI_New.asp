@@ -327,6 +327,20 @@
 </script>
 </asp:Content>
 <asp:Content ContentPlaceHolderId="PlaceHolderBodyAreaClass" runat="server">
+<script type="text/javascript" src="~SiteCollection/_layouts/15/jquery-1.8.3.js" ></script>
+<script type="text/javascript" src="~SiteCollection/_layouts/15/jquery.SPServices-2013.01.js" ></script>
+<script type="text/javascript">
+var $j = jQuery.noConflict(true);
+function PreSaveAction()
+{
+  var r=confirm("Are you sure you want to submit this RFI form?");
+if (r==false)
+  {
+  return false;
+  }
+  return true;
+}
+</script>
 <SharePoint:StyleBlock runat="server">
 .ms-bodyareaframe {
 	padding: 8px;
