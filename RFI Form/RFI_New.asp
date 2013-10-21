@@ -122,7 +122,7 @@
 									<td width="190px" valign="top" class="ms-formlabel">
 									
 									<H3 class="ms-standardheader">
-									<nobr>Title<span class="ms-formvalidation"> *</span>
+									<nobr>Description<span class="ms-formvalidation"> *</span>
 									</nobr>
 									</H3>
 									</td>
@@ -138,59 +138,14 @@
 									<td width="190px" valign="top" class="ms-formlabel">
 									
 									<H3 class="ms-standardheader">
-									<nobr>Contract ID</nobr>
+									<nobr>Specification</nobr>
 									</H3>
 									</td>
 									<td width="400px" valign="top" class="ms-formbody">
 									
-									<SharePoint:FormField runat="server" id="ff2{$Pos}" ControlMode="New" FieldName="RFI_Contract_ID" __designer:bind="{ddwrt:DataBind('i',concat('ff2',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@RFI_Contract_ID')}"/>
+									<SharePoint:FormField runat="server" id="ff13{$Pos}" ControlMode="New" FieldName="RFI_Spec_Num" __designer:bind="{ddwrt:DataBind('i',concat('ff13',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@RFI_Spec_Num')}"/>
 									
-									<SharePoint:FieldDescription runat="server" id="ff2description{$Pos}" FieldName="RFI_Contract_ID" ControlMode="New"/>
-									
-									</td>
-								</tr>
-								<tr>
-									<td width="190px" valign="top" class="ms-formlabel">
-									
-									<H3 class="ms-standardheader">
-									<nobr>Contractor</nobr>
-									</H3>
-									</td>
-									<td width="400px" valign="top" class="ms-formbody">
-									
-									<SharePoint:FormField runat="server" id="ff3{$Pos}" ControlMode="New" FieldName="RFI_Contractor" __designer:bind="{ddwrt:DataBind('i',concat('ff3',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@RFI_Contractor')}"/>
-									
-									<SharePoint:FieldDescription runat="server" id="ff3description{$Pos}" FieldName="RFI_Contractor" ControlMode="New"/>
-									
-									</td>
-								</tr>
-								<tr>
-									<td width="190px" valign="top" class="ms-formlabel">
-									
-									<H3 class="ms-standardheader">
-									<nobr>RFI_Designer</nobr>
-									</H3>
-									</td>
-									<td width="400px" valign="top" class="ms-formbody">
-									
-									<SharePoint:FormField runat="server" id="ff4{$Pos}" ControlMode="New" FieldName="RFI_Designer" __designer:bind="{ddwrt:DataBind('i',concat('ff4',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@RFI_Designer')}"/>
-									
-									<SharePoint:FieldDescription runat="server" id="ff4description{$Pos}" FieldName="RFI_Designer" ControlMode="New"/>
-									
-									</td>
-								</tr>
-								<tr>
-									<td width="190px" valign="top" class="ms-formlabel">
-									
-									<H3 class="ms-standardheader">
-									<nobr>Detail</nobr>
-									</H3>
-									</td>
-									<td width="400px" valign="top" class="ms-formbody">
-									
-									<SharePoint:FormField runat="server" id="ff5{$Pos}" ControlMode="New" FieldName="RFI_Detail" __designer:bind="{ddwrt:DataBind('i',concat('ff5',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@RFI_Detail')}"/>
-									
-									<SharePoint:FieldDescription runat="server" id="ff5description{$Pos}" FieldName="RFI_Detail" ControlMode="New"/>
+									<SharePoint:FieldDescription runat="server" id="ff13description{$Pos}" FieldName="RFI_Spec_Num" ControlMode="New"/>
 									
 									</td>
 								</tr>
@@ -213,14 +168,14 @@
 									<td width="190px" valign="top" class="ms-formlabel">
 									
 									<H3 class="ms-standardheader">
-									<nobr>Project</nobr>
+									<nobr>Detail Description</nobr>
 									</H3>
 									</td>
 									<td width="400px" valign="top" class="ms-formbody">
 									
-									<SharePoint:FormField runat="server" id="ff7{$Pos}" ControlMode="New" FieldName="RFI_IPL_Project_Code" __designer:bind="{ddwrt:DataBind('i',concat('ff7',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@RFI_IPL_Project_Code')}"/>
+									<SharePoint:FormField runat="server" id="ff5{$Pos}" ControlMode="New" FieldName="RFI_Detail" __designer:bind="{ddwrt:DataBind('i',concat('ff5',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@RFI_Detail')}"/>
 									
-									<SharePoint:FieldDescription runat="server" id="ff7description{$Pos}" FieldName="RFI_IPL_Project_Code" ControlMode="New"/>
+									<SharePoint:FieldDescription runat="server" id="ff5description{$Pos}" FieldName="RFI_Detail" ControlMode="New"/>
 									
 									</td>
 								</tr>
@@ -239,21 +194,7 @@
 									
 									</td>
 								</tr>
-								<tr>
-									<td width="190px" valign="top" class="ms-formlabel">
-									
-									<H3 class="ms-standardheader">
-									<nobr>Specification</nobr>
-									</H3>
-									</td>
-									<td width="400px" valign="top" class="ms-formbody">
-									
-									<SharePoint:FormField runat="server" id="ff13{$Pos}" ControlMode="New" FieldName="RFI_Spec_Num" __designer:bind="{ddwrt:DataBind('i',concat('ff13',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@RFI_Spec_Num')}"/>
-									
-									<SharePoint:FieldDescription runat="server" id="ff13description{$Pos}" FieldName="RFI_Spec_Num" ControlMode="New"/>
-									
-									</td>
-								</tr>
+								
 								<tr id="idAttachmentsRow">
 									<td nowrap="true" valign="top" class="ms-formlabel" width="20%">
 									
