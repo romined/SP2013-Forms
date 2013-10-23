@@ -323,9 +323,9 @@ var $j = jQuery.noConflict(true);
  });
  //$j('Submitted_By')(function(i){ $(this).text($(this).text().replace('Submitted_By',val(userName)))
  $j('div[title="Submitted_By"]').text(userName);
-})
+});
 //Code to post the userName in SubmittedByField field 
- });
+
 function PreSaveAction()
 {
   var myChoiceFieldValue = $j("select[title$='Contractor_Cert']").val();
@@ -335,11 +335,7 @@ function PreSaveAction()
     return false;  
   }
   var r=confirm("Are you sure you want to submit this Record Data form?");
-if (r==false)
-  {
-  return false;
-  }
-  return true;
+  return r;
 }
 </script>
 <SharePoint:StyleBlock runat="server">
