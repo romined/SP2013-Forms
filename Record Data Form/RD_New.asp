@@ -322,7 +322,7 @@ var $j = jQuery.noConflict(true);
   debug: false
  });
  //$j('Submitted_By')(function(i){ $(this).text($(this).text().replace('Submitted_By',val(userName)))
- $j('Submitted_By').text(userName);
+ $j('div[title="Submitted_By"]').text(userName);
 })
 //Code to post the userName in SubmittedByField field 
  });
