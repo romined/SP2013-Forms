@@ -312,16 +312,17 @@
 </script>
 </asp:Content>
 <asp:Content ContentPlaceHolderId="PlaceHolderBodyAreaClass" runat="server">
-<script type="text/javascript" src="~SiteCollection/_layouts/15/jquery-1.10.2.min.js" ></script>
-<script type="text/javascript" src="~SiteCollection/_layouts/15/jquery.SPServices-2013.01.js" ></script>
+<script type="text/javascript" src="/_layouts/15/jquery-1.10.2.min.js" ></script>
+<script type="text/javascript" src="/_layouts/15/jquery.SPServices-2013.01.js" ></script>
 <script type="text/javascript">
 var $j = jQuery.noConflict(true);
-$j(document).ready(function(){
- var userName = $j().SPServices.SPGetCurrentUser({
- fieldName: "Title",
- debug: false
+ $j(document).ready(function(){
+  var userName = $j().SPServices.SPGetCurrentUser({
+  fieldName: "Title",
+  debug: false
  });
-$j('Submitted_By')(function(i){ $(this).text($(this).text().replace('Submitted_By',val(userName)))
+ //$j('Submitted_By')(function(i){ $(this).text($(this).text().replace('Submitted_By',val(userName)))
+ $j('Submitted_By').text(userName);
 })
 //Code to post the userName in SubmittedByField field 
  });
