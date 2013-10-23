@@ -118,17 +118,15 @@
 						</td>
 					</tr>
 					<tr>
-					<div id="Submitted_By" style="display:none">
 						<td width="190px" valign="top" class="ms-formlabel">
 							<H3 class="ms-standardheader">
 								<nobr>Submitted By</nobr>
 							</H3>
 						</td>
 						<td width="400px" valign="top" class="ms-formbody">
-							<SharePoint:FormField runat="server" id="ff10{$Pos}" ControlMode="Display" FieldName="Submitted_By" __designer:bind="{ddwrt:DataBind('i',concat('ff10',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@Submitted_By')}"/>
-							<SharePoint:FieldDescription runat="server" id="ff10description{$Pos}" FieldName="Submitted_By" ControlMode="Display"/>
+							<H3 id="Submitted_By" class="ms-standardheader">
+							</H3>
 						</td>
-					</div>
 					</tr>
 					<tr>
 						<td width="190px" valign="top" class="ms-formlabel">
@@ -321,7 +319,7 @@ var $j = jQuery.noConflict(true);
   fieldName: "Title",
   debug: false
  });
- $j('input[title="Submitted_By"]').val(userName);
+ $j('#Submitted_By').text(userName);
 });
 //Code to post the userName in SubmittedByField field 
 
