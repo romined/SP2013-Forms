@@ -321,7 +321,6 @@ var $j = jQuery.noConflict(true);
   fieldName: "Title",
   debug: false
  });
- //$j('Submitted_By')(function(i){ $(this).text($(this).text().replace('Submitted_By',val(userName)))
  $j('input[title="Submitted_By"]').val(userName);
 });
 //Code to post the userName in SubmittedByField field 
