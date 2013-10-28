@@ -117,7 +117,17 @@
 						<tr>
 							<td>
 							<table border="0" cellspacing="0" width="100%">
-								
+								<tr>
+									<td width="190px" valign="top" class="ms-formlabel">
+									<H3 class="ms-standardheader">
+									<nobr>Submitted By</nobr>
+									</H3>
+									</td>
+									<td width="400px" valign="top" class="ms-formbody">
+									<H3 id="Submitted_By" class="ms-standardheader">
+									</H3>
+									</td>
+								</tr>
 								<tr>
 									<td width="190px" valign="top" class="ms-formlabel">
 									
@@ -183,7 +193,7 @@
 									<td width="190px" valign="top" class="ms-formlabel">
 									
 									<H3 class="ms-standardheader">
-									<nobr>Request</nobr>
+									<nobr>Request<span class="ms-formvalidation"> *</span></nobr>
 									</H3>
 									</td>
 									<td width="400px" valign="top" class="ms-formbody">
@@ -272,14 +282,19 @@
 <script type="text/javascript" src="~SiteCollection/_layouts/15/jquery.SPServices-2013.01.js" ></script>
 <script type="text/javascript">
 var $j = jQuery.noConflict(true);
+$j(document).ready(function(){
+  var userName = $j().SPServices.SPGetCurrentUser({
+  fieldName: "Title",
+  debug: false
+ });
+ $j('#Submitted_By').text(userName);
+});
+//Code to post the userName in SubmittedByField field 
+
 function PreSaveAction()
 {
-  var r=confirm("Are you sure you want to submit this RFI form?");
-if (r==false)
-  {
-  return false;
-  }
-  return true;
+   var r=confirm("Are you sure you want to submit this Record Data form?");
+  return r;
 }
 </script>
 <SharePoint:StyleBlock runat="server">
