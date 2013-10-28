@@ -293,7 +293,7 @@ $j(document).ready(function(){
 
 function PreSaveAction()
 {
-   var r=confirm("Are you sure you want to submit this Record Data form?");
+   var r=confirm("Are you sure you want to submit this Request for Information form?");
   return r;
 }
 </script>
