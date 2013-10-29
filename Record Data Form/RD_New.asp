@@ -168,7 +168,7 @@
 					<tr>
 						<td width="190px" valign="top" class="ms-formlabel">
 							<H3 class="ms-standardheader">
-								<nobr>Specification</nobr>
+								<nobr>Specification</nobr><span class="ms-formvalidation"> *</span>
 							</H3>
 						</td>
 						<td width="400px" valign="top" class="ms-formbody">
@@ -179,7 +179,7 @@
 					<tr>
 						<td width="190px" valign="top" class="ms-formlabel">
 							<H3 class="ms-standardheader">
-								<nobr>Drawing Number</nobr>
+								<nobr>Drawing Number</nobr><span class="ms-formvalidation"> *</span>
 							</H3>
 						</td>
 						<td width="400px" valign="top" class="ms-formbody">
@@ -190,7 +190,7 @@
 					<tr>
 						<td width="190px" valign="top" class="ms-formlabel">
 							<H3 class="ms-standardheader">
-								<nobr>Detail Description</nobr>
+								<nobr>Detail Description</nobr><span class="ms-formvalidation"> *</span>
 							</H3>
 						</td>
 						<td width="400px" valign="top" class="ms-formbody">
