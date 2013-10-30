@@ -136,8 +136,8 @@
 									
 									<tr>
 										<td width="190px" valign="top" class="ms-formlabel">
-											<H3 class="ms-standardheader">
-												<nobr>Submitted By</nobr>
+											<H3 class="ms-standardheader field">
+												<nobr>Submitted By: </nobr>
 											</H3>
 										</td>
 										<td width="400px" valign="top" class="ms-formbody">
@@ -147,35 +147,52 @@
 									</tr>
 									<tr>
 										<td width="190px" valign="top" class="ms-formlabel">
-											<H3 class="ms-standardheader">
-												<nobr>Project Number: <span id="ProjectNumber"></span></nobr>
+											<H3 class="ms-standardheader field">
+												<nobr>Project Number: </nobr>
 											</H3>
 										</td>
-										<td width="190px" valign="top" class="ms-formlabel">
-											<H3 class="ms-standardheader">
-												<nobr>Contractor: <span id="Contractor"></span></nobr>
-											</H3>
-										</td>						
-									</tr>	
-									<tr>						
-										<td width="190px" valign="top" class="ms-formlabel">
-											<H3 class="ms-standardheader">
-												<nobr>Designer: <span id="Designer"></span></nobr>
-											</H3>
-										</td>
-										<td width="190px" valign="top" class="ms-formlabel">
-											<H3 class="ms-standardheader">
-												<nobr>IPL Project Code: <span id="IPL_Project_Code"></span></nobr>
+										<td width="400px" valign="top" class="ms-formbody">
+											<H3 id="ProjectNumber" class="ms-standardheader">
 											</H3>
 										</td>
 									</tr>
 									<tr>
 										<td width="190px" valign="top" class="ms-formlabel">
-										
-									
-										<H3 class="ms-standardheader">
-										
-										<nobr>Description<span class="ms-formvalidation"> *</span>
+											<H3 class="ms-standardheader field">
+												<nobr>Contractor: </nobr>
+											</H3>
+										</td>						
+										<td width="400px" valign="top" class="ms-formbody">
+											<H3 id="Contractor" class="ms-standardheader">
+											</H3>
+										</td>
+									</tr>	
+									<tr>						
+										<td width="190px" valign="top" class="ms-formlabel">
+											<H3 class="ms-standardheader field">
+												<nobr>Designer: </nobr>
+											</H3>
+										</td>
+										<td width="400px" valign="top" class="ms-formbody">
+											<H3 id="Designer" class="ms-standardheader">
+											</H3>
+										</td>
+									</tr>
+									<tr>
+										<td width="190px" valign="top" class="ms-formlabel">
+											<H3 class="ms-standardheader field">
+												<nobr>IPL Project Code: </nobr>
+											</H3>
+										</td>
+										<td width="400px" valign="top" class="ms-formbody">
+											<H3 id="IPL_Project_Code" class="ms-standardheader">
+											</H3>
+										</td>
+									</tr>
+									<tr>
+										<td width="190px" valign="top" class="ms-formlabel">
+										<H3 class="ms-standardheader field">
+											<nobr>Description: <span class="ms-formvalidation"> *</span>
 										</nobr>
 										</H3>
 										</td>
@@ -194,9 +211,9 @@
 										<td width="190px" valign="top" class="ms-formlabel">
 										
 									
-										<H3 class="ms-standardheader">
+										<H3 class="ms-standardheader field">
 										
-										<nobr>Specification</nobr>
+										<nobr>Specification: </nobr>
 										</H3>
 										</td>
 										<td width="400px" valign="top" class="ms-formbody">
@@ -214,9 +231,9 @@
 										<td width="190px" valign="top" class="ms-formlabel">
 										
 									
-										<H3 class="ms-standardheader">
+										<H3 class="ms-standardheader field">
 										
-										<nobr>Drawing Number</nobr>
+										<nobr>Drawing Number: </nobr>
 										</H3>
 										</td>
 										<td width="400px" valign="top" class="ms-formbody">
@@ -234,9 +251,9 @@
 										<td width="190px" valign="top" class="ms-formlabel">
 										
 									
-										<H3 class="ms-standardheader">
+										<H3 class="ms-standardheader field">
 										
-										<nobr>Detail Description</nobr>
+										<nobr>Detail Description: </nobr>
 										</H3>
 										</td>
 										<td width="400px" valign="top" class="ms-formbody">
@@ -254,9 +271,9 @@
 										<td width="190px" valign="top" class="ms-formlabel">
 										
 									
-										<H3 class="ms-standardheader">
+										<H3 class="ms-standardheader field">
 										
-										<nobr>Request<span class="ms-formvalidation"> *</span></nobr>
+										<nobr>Request: <span class="ms-formvalidation"> *</span></nobr>
 										</H3>
 										</td>
 										<td width="400px" valign="top" class="ms-formbody">
@@ -336,6 +353,16 @@
 	<SharePoint:UIVersionedContent UIVersion="4" runat="server"><ContentTemplate>
 		<SharePoint:CssRegistration Name="forms.css" runat="server"/>
 	</ContentTemplate></SharePoint:UIVersionedContent>
+	<style>
+	
+h3.ms-standardheader.field {
+	font-weight: bold;
+}
+.ms-formvalidation {
+	font-size: larger;
+}
+	
+	</style>
 </asp:Content>
 <asp:Content ContentPlaceHolderId="PlaceHolderTitleLeftBorder" runat="server">
 <table cellpadding="0" height="100%" width="100%" cellspacing="0">
@@ -354,24 +381,26 @@
 <script type="text/javascript" src="/_layouts/15/jquery-1.8.3.js" ></script>
 <script type="text/javascript" src="/_layouts/15/jquery.SPServices-2013.01.js" ></script>
 <script type="text/javascript">
-var $j = jQuery.noConflict(true);
-	$j(document).ready(function(){
-		var userName = $j().SPServices.SPGetCurrentUser({
+$(document).ready(function(){
+	var userName = $().SPServices.SPGetCurrentUser({
 		fieldName: "Title",
 		debug: false
 	});
-	$j('#Submitted_By').text(userName);
+	$('#Submitted_By').text(userName);
 
-	$j().SPServices({
+	$().SPServices({
 		operation: "GetListItems",
 		async: false,
 		CAMLViewFields: "<ViewFields><FieldRef Name='tValue' /></ViewFields>",
-		CAMLQuery: "<Query><Where><Or><Or>" +
-			"<Eq><FieldRef Name='Title' /><Value Type='Text'>ProjectNumber</Value></Eq>" +
-			"<Eq><FieldRef Name='Title' /><Value Type='Text'>Contractor</Value></Eq></Or>" +
-			"<Or><Eq><FieldRef Name='Title' /><Value Type='Text'>Designer</Value></Eq>" +
-			"<Eq><FieldRef Name='Title' /><Value Type='Text'>IPL_Project_Code</Value></Eq>" +
-			"</Or></Or></Where></Query>",
+		CAMLQuery: "<Query><Where><Or>" +
+			"<Or>" +
+				"<Eq><FieldRef Name='Title' /><Value Type='Text'>ProjectNumber</Value></Eq>" +
+				"<Eq><FieldRef Name='Title' /><Value Type='Text'>Contractor</Value></Eq>" +
+			"</Or><Or>" +
+				"<Eq><FieldRef Name='Title' /><Value Type='Text'>Designer</Value></Eq>" +
+				"<Eq><FieldRef Name='Title' /><Value Type='Text'>IPL_Project_Code</Value></Eq>" +
+			"</Or>" +
+			"</Or></Where></Query>",
 		listName: "Site_Constants",
 		completefunc: function(xData, Status) {
 			$j(xData.responseXML).SPFilterNode("z:row").each(function(){
