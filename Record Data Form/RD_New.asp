@@ -37,10 +37,12 @@
 
 
 
+
+
 <xsl:stylesheet xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:dsp="http://schemas.microsoft.com/sharepoint/dsp" version="1.0" exclude-result-prefixes="xsl msxsl ddwrt" xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:SharePoint="Microsoft.SharePoint.WebControls" xmlns:ddwrt2="urn:frontpage:internal">
 	<xsl:output method="html" indent="no"/>
 	<xsl:decimal-format NaN=""/>
-	<xsl:param name="dvt_apos">'</xsl:param>
+	<xsl:param name="dvt_apos">&apos;</xsl:param>
 	<xsl:param name="ManualRefresh"></xsl:param>
 	<xsl:variable name="dvt_1_automode">0</xsl:variable>
 	<xsl:template match="/" xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:dsp="http://schemas.microsoft.com/sharepoint/dsp" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" xmlns:SharePoint="Microsoft.SharePoint.WebControls">
@@ -131,24 +133,24 @@
 					<tr>
 						<td width="190px" valign="top" class="ms-formlabel">
 							<H3 class="ms-standardheader">
-								<nobr>Project:          15-1</nobr>
+								<nobr>Project Number: <span id="ProjectNumber"></span></nobr>
 							</H3>
 						</td>
 						<td width="190px" valign="top" class="ms-formlabel">
 							<H3 class="ms-standardheader">
-								<nobr>Project Number: 15-1-1789</nobr>
+								<nobr>Contractor: <span id="Contractor"></span></nobr>
 							</H3>
 						</td>						
 					</tr>	
 					<tr>						
 						<td width="190px" valign="top" class="ms-formlabel">
 							<H3 class="ms-standardheader">
-								<nobr>Contractor:          B3CK</nobr>
+								<nobr>Designer: <span id="Designer"></span></nobr>
 							</H3>
 						</td>
 						<td width="190px" valign="top" class="ms-formlabel">
 							<H3 class="ms-standardheader">
-								<nobr>Designer:          LAN</nobr>
+								<nobr>IPL Project Code: <span id="IPL_Project_Code"></span></nobr>
 							</H3>
 						</td>
 					</tr>
@@ -268,7 +270,8 @@
 		</tr>
 	</xsl:template>
 </xsl:stylesheet>	</Xsl>
-<DataFields>@ID,ID;@ContentType,Content Type;@Title,Summary;@Modified,Modified;@Created,Created;@Author,Created By;@Editor,Modified By;@_UIVersionString,Version;@Attachments,Attachments;@File_x0020_Type,File Type;@FileLeafRef,Name (for use in forms);@FileDirRef,Path;@FSObjType,Item Type;@_HasCopyDestinations,Has Copy Destinations;@_CopySource,Copy Source;@ContentTypeId,Content Type ID;@_ModerationStatus,Approval Status;@_UIVersion,UI Version;@Created_x0020_Date,Created;@FileRef,URL Path;@ItemChildCount,Item Child Count;@FolderChildCount,Folder Child Count;@AppAuthor,App Created By;@AppEditor,App Modified By;@RD_Num,RD_Num;@RD_Cert_Name,RD_Cert_Name;@RD_Cert_Date,RD_Cert_Date;@RD_Status,RD_Status;@Submitter_Comments,Submitter_Comments;@Reviewer_Comments,Reviewer_Comments;@Record_x0020_Data_x0020_Workflow,Record Data Workflow;@RE_Response_Date,RE_Response_Date;@Submited_Date,Submited_Date;@Form_Rev,Form_Rev;@Submitted_By,Submitted_By;@Submitter_Co,Submitter_Co;@PublishingContactEmail,Contact E-Mail Address;@CompanyNumber,Company Main Phone;@RD_Project_Num,RD_Project_Num;@RD_Designer,RD_Designer;@RD_Project,RD_Project;@RD_Owner_x002F_PCM,RD_Owner/PCM;@RD_Contractor,RD_Contractor;@Contractor_Cert,Contractor_Cert;@RD_Signature,RD_Signature;@SpecNum,SpecNum;@DrawingNum,DrawingNum;@DetailDescription,DetailDescription;@RecordDataNewForm,RecordDataNewForm;@SPFormInternalID,ConstructionTaskGUID;@Record_x0020_Data_x0020_State,Record Data State;@SubmittalRegisterItemGUID,SubmittalRegisterItemGUID;@ReSubmitReady,ReSubmitReady;</DataFields>
+<DataFields>
+@ID,ID;@ContentType,Content Type;@Title,Summary;@Modified,Modified;@Created,Created;@Author,Created By;@Editor,Modified By;@_UIVersionString,Version;@Attachments,Attachments;@File_x0020_Type,File Type;@FileLeafRef,Name (for use in forms);@FileDirRef,Path;@FSObjType,Item Type;@_HasCopyDestinations,Has Copy Destinations;@_CopySource,Copy Source;@ContentTypeId,Content Type ID;@_ModerationStatus,Approval Status;@_UIVersion,UI Version;@Created_x0020_Date,Created;@FileRef,URL Path;@ItemChildCount,Item Child Count;@FolderChildCount,Folder Child Count;@AppAuthor,App Created By;@AppEditor,App Modified By;@RD_Num,RD_Num;@RD_Cert_Name,RD_Cert_Name;@RD_Cert_Date,RD_Cert_Date;@RD_Status,RD_Status;@Submitter_Comments,Submitter_Comments;@Reviewer_Comments,Reviewer_Comments;@Record_x0020_Data_x0020_Workflow,Record Data Workflow;@RE_Response_Date,RE_Response_Date;@Submited_Date,Submited_Date;@Form_Rev,Form_Rev;@Submitted_By,Submitted_By;@Submitter_Co,Submitter_Co;@PublishingContactEmail,Contact E-Mail Address;@CompanyNumber,Company Main Phone;@RD_Project_Num,RD_Project_Num;@RD_Designer,RD_Designer;@RD_Project,RD_Project;@RD_Owner_x002F_PCM,RD_Owner/PCM;@RD_Contractor,RD_Contractor;@Contractor_Cert,Contractor_Cert;@RD_Signature,RD_Signature;@SpecNum,SpecNum;@DrawingNum,DrawingNum;@DetailDescription,DetailDescription;@SPFormInternalID,ConstructionTaskGUID;@SubmittalRegisterItemGUID,SubmittalRegisterItemGUID;@ReSubmitReady,ReSubmitReady;@FormCC,FormCC;@Form_Status,Form_Status;@RecordDataNewForm,RecordDataNewForm;@Record_x0020_Data_x0020_State,Record Data State;</DataFields>
 <ParameterBindings>
 		 <ParameterBinding Name="ListItemId" Location="QueryString(ID)" DefaultValue="0"/>
 		 <ParameterBinding Name="weburl" Location="None" DefaultValue="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev"/>
@@ -314,12 +317,32 @@
 <script type="text/javascript" src="/_layouts/15/jquery.SPServices-2013.01.js" ></script>
 <script type="text/javascript">
 var $j = jQuery.noConflict(true);
- $j(document).ready(function(){
-  var userName = $j().SPServices.SPGetCurrentUser({
-  fieldName: "Title",
-  debug: false
- });
- $j('#Submitted_By').text(userName);
+	$j(document).ready(function(){
+		var userName = $j().SPServices.SPGetCurrentUser({
+		fieldName: "Title",
+		debug: false
+	});
+	$j('#Submitted_By').text(userName);
+
+	$j().SPServices({
+		operation: "GetListItems",
+		async: false,
+		CAMLViewFields: "<ViewFields><FieldRef Name='tValue' /></ViewFields>",
+		CAMLQuery: "<Query><Where><Or><Or>" +
+			"<Eq><FieldRef Name='Title' /><Value Type='Text'>ProjectNumber</Value></Eq>" +
+			"<Eq><FieldRef Name='Title' /><Value Type='Text'>Contractor</Value></Eq></Or>" +
+			"<Or><Eq><FieldRef Name='Title' /><Value Type='Text'>Designer</Value></Eq>" +
+			"<Eq><FieldRef Name='Title' /><Value Type='Text'>IPL_Project_Code</Value></Eq>" +
+			"</Or></Or></Where></Query>",
+		listName: "Site_Constants",
+		completefunc: function(xData, Status) {
+			$j(xData.responseXML).SPFilterNode("z:row").each(function(){
+				var title = $j(this).attr('ows_Title');
+				var val = $j(this).attr('ows_tValue');
+				$j('#' + title).text(val);
+			});
+		}
+	});
 });
 //Code to post the userName in SubmittedByField field 
 
