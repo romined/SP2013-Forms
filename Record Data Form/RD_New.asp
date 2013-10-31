@@ -368,10 +368,10 @@ $(document).ready(function(){
 			"</Or></Where></Query>",
 		listName: "Site_Constants",
 		completefunc: function(xData, Status) {
-			$j(xData.responseXML).SPFilterNode("z:row").each(function(){
-				var title = $j(this).attr('ows_Title');
-				var val = $j(this).attr('ows_tValue');
-				$j('#' + title).text(val);
+			$(xData.responseXML).SPFilterNode("z:row").each(function(){
+				var title = $(this).attr('ows_Title');
+				var val = $(this).attr('ows_tValue');
+				$('#' + title).text(val);
 			});
 		}
 	});
@@ -380,7 +380,7 @@ $(document).ready(function(){
 
 function PreSaveAction()
 {
-  var myChoiceFieldValue = $j("select[title$='Contractor_Cert']").val();
+  var myChoiceFieldValue = $("select[title$='Contractor_Cert']").val();
   if(myChoiceFieldValue == 'Click to Certify')
   {
     alert("Please click the drop down Click to Certify and choose Certified.");
