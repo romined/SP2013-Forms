@@ -331,9 +331,13 @@ function PreSaveAction()
   var myChoiceFieldValue = $j("select[title$='ReSubmitReady']").val();
   if(myChoiceFieldValue == 'No')
   {
-    alert("Please click the drop down next to "Re-Submit Record Data Form?" and select Yes.");
+    alert("Please click the drop down next to Re-Submit Record Data Form? and select Yes.");
     return false;  
   }
+  else 
+	{
+	return true;
+	}
 }
 </script>
 <SharePoint:StyleBlock runat="server">
