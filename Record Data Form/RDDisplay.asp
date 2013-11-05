@@ -21,11 +21,11 @@
 	 <tr>
 	  <td>
 	 <WebPartPages:WebPartZone runat="server" FrameType="None" ID="Main" Title="loc:Main"><ZoneTemplate>
-		<WebPartPages:DataFormWebPart runat="server" EnableOriginalValue="False" DisplayName="Record Data" ViewFlag="1048584" ViewContentTypeId="" Default="FALSE" ListUrl="" ListDisplayName="" ListName="{02E083B6-237F-4B24-AA0F-D883915445CF}" ListId="02e083b6-237f-4b24-aa0f-d883915445cf" PageType="PAGE_DISPLAYFORM" PageSize="-1" UseSQLDataSourcePaging="True" DataSourceID="" ShowWithSampleData="False" AsyncRefresh="False" ManualRefresh="False" AutoRefresh="False" AutoRefreshInterval="60" NoDefaultStyle="TRUE" InitialAsyncDataFetch="False" Title="Record Data" FrameType="None" SuppressWebPartChrome="False" Description="" IsIncluded="True" PartOrder="2" FrameState="Normal" AllowRemove="True" AllowZoneChange="True" AllowMinimize="True" AllowConnect="True" AllowEdit="True" AllowHide="True" IsVisible="True" DetailLink="" HelpLink="" HelpMode="Modeless" Dir="Default" PartImageSmall="" MissingAssembly="Cannot import this Web Part." PartImageLarge="" IsIncludedFilter="" ExportControlledProperties="True" ConnectionID="00000000-0000-0000-0000-000000000000" ID="g_cf32ea02_0f5e_4c1a_bd62_65586697e6c6" ChromeType="None" ExportMode="All" __MarkupType="vsattributemarkup" __WebPartId="{BD61000D-4499-4E65-91BC-A1D110BEDCC8}" __AllowXSLTEditing="true" WebPart="true" Height="" Width=""><DataSources>
-<SharePoint:SPDataSource runat="server" DataSourceMode="ListItem" SelectCommand="&lt;View&gt;&lt;Query&gt;&lt;Where&gt;&lt;Eq&gt;&lt;FieldRef Name=&quot;ContentType&quot;/&gt;&lt;Value Type=&quot;Text&quot;&gt;Record_Data&lt;/Value&gt;&lt;/Eq&gt;&lt;/Where&gt;&lt;/Query&gt;&lt;/View&gt;" UseInternalName="True" UseServerDataFormat="True"><SelectParameters><WebPartPages:DataFormParameter ParameterKey="ListItemId" PropertyName="ParameterValues" DefaultValue="0" Name="ListItemId"></WebPartPages:DataFormParameter><WebPartPages:DataFormParameter ParameterKey="weburl" PropertyName="ParameterValues" DefaultValue="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev" Name="weburl"></WebPartPages:DataFormParameter><WebPartPages:DataFormParameter ParameterKey="ListID" PropertyName="ParameterValues" DefaultValue="{02e083b6-237f-4b24-aa0f-d883915445cf}" Name="ListID"></WebPartPages:DataFormParameter>
-			</SelectParameters><UpdateParameters><WebPartPages:DataFormParameter ParameterKey="ListItemId" PropertyName="ParameterValues" DefaultValue="0" Name="ListItemId"></WebPartPages:DataFormParameter><WebPartPages:DataFormParameter ParameterKey="weburl" PropertyName="ParameterValues" DefaultValue="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev" Name="weburl"></WebPartPages:DataFormParameter><WebPartPages:DataFormParameter ParameterKey="ListID" PropertyName="ParameterValues" DefaultValue="{02e083b6-237f-4b24-aa0f-d883915445cf}" Name="ListID"></WebPartPages:DataFormParameter>
-			</UpdateParameters><InsertParameters><WebPartPages:DataFormParameter ParameterKey="ListItemId" PropertyName="ParameterValues" DefaultValue="0" Name="ListItemId"></WebPartPages:DataFormParameter><WebPartPages:DataFormParameter ParameterKey="weburl" PropertyName="ParameterValues" DefaultValue="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev" Name="weburl"></WebPartPages:DataFormParameter><WebPartPages:DataFormParameter ParameterKey="ListID" PropertyName="ParameterValues" DefaultValue="{02e083b6-237f-4b24-aa0f-d883915445cf}" Name="ListID"></WebPartPages:DataFormParameter>
-			</InsertParameters><DeleteParameters><WebPartPages:DataFormParameter ParameterKey="ListItemId" PropertyName="ParameterValues" DefaultValue="0" Name="ListItemId"></WebPartPages:DataFormParameter><WebPartPages:DataFormParameter ParameterKey="weburl" PropertyName="ParameterValues" DefaultValue="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev" Name="weburl"></WebPartPages:DataFormParameter><WebPartPages:DataFormParameter ParameterKey="ListID" PropertyName="ParameterValues" DefaultValue="{02e083b6-237f-4b24-aa0f-d883915445cf}" Name="ListID"></WebPartPages:DataFormParameter>
+		<WebPartPages:DataFormWebPart runat="server" EnableOriginalValue="False" DisplayName="Record Data" ViewFlag="1048584" ViewContentTypeId="" Default="FALSE" ListUrl="" ListDisplayName="" ListName="{02E083B6-237F-4B24-AA0F-D883915445CF}" ListId="02e083b6-237f-4b24-aa0f-d883915445cf" PageType="PAGE_DISPLAYFORM" PageSize="-1" UseSQLDataSourcePaging="True" DataSourceID="" ShowWithSampleData="False" AsyncRefresh="False" ManualRefresh="False" AutoRefresh="False" AutoRefreshInterval="60" NoDefaultStyle="TRUE" InitialAsyncDataFetch="False" Title="Record Data" FrameType="None" SuppressWebPartChrome="False" Description="" IsIncluded="True" PartOrder="2" FrameState="Normal" AllowRemove="True" AllowZoneChange="True" AllowMinimize="True" AllowConnect="True" AllowEdit="True" AllowHide="True" IsVisible="True" DetailLink="" HelpLink="" HelpMode="Modeless" Dir="Default" PartImageSmall="" MissingAssembly="Cannot import this Web Part." PartImageLarge="" IsIncludedFilter="" ExportControlledProperties="True" ConnectionID="00000000-0000-0000-0000-000000000000" ID="g_2c201324_3d27_45ef_8c59_0b81f2d7d64f" ChromeType="None" ExportMode="All" __MarkupType="vsattributemarkup" __WebPartId="{2C201324-3D27-45EF-8C59-0B81F2D7D64F}" __AllowXSLTEditing="true" WebPart="true" Height="" Width=""><DataSources>
+<SharePoint:SPDataSource runat="server" DataSourceMode="ListItem" SelectCommand="&lt;View&gt;&lt;Query&gt;&lt;Where&gt;&lt;Eq&gt;&lt;FieldRef Name=&quot;ContentType&quot;/&gt;&lt;Value Type=&quot;Text&quot;&gt;Record_Data&lt;/Value&gt;&lt;/Eq&gt;&lt;/Where&gt;&lt;/Query&gt;&lt;/View&gt;" UseInternalName="True" UseServerDataFormat="True"><SelectParameters><WebPartPages:DataFormParameter ParameterKey="ListItemId" PropertyName="ParameterValues" DefaultValue="0" Name="ListItemId"></WebPartPages:DataFormParameter><WebPartPages:DataFormParameter ParameterKey="weburl" PropertyName="ParameterValues" DefaultValue="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev" Name="weburl"></WebPartPages:DataFormParameter><WebPartPages:DataFormParameter ParameterKey="ListID" PropertyName="ParameterValues" DefaultValue="{02E083B6-237F-4B24-AA0F-D883915445CF}" Name="ListID"></WebPartPages:DataFormParameter>
+			</SelectParameters><UpdateParameters><WebPartPages:DataFormParameter ParameterKey="ListItemId" PropertyName="ParameterValues" DefaultValue="0" Name="ListItemId"></WebPartPages:DataFormParameter><WebPartPages:DataFormParameter ParameterKey="weburl" PropertyName="ParameterValues" DefaultValue="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev" Name="weburl"></WebPartPages:DataFormParameter><WebPartPages:DataFormParameter ParameterKey="ListID" PropertyName="ParameterValues" DefaultValue="{02E083B6-237F-4B24-AA0F-D883915445CF}" Name="ListID"></WebPartPages:DataFormParameter>
+			</UpdateParameters><InsertParameters><WebPartPages:DataFormParameter ParameterKey="ListItemId" PropertyName="ParameterValues" DefaultValue="0" Name="ListItemId"></WebPartPages:DataFormParameter><WebPartPages:DataFormParameter ParameterKey="weburl" PropertyName="ParameterValues" DefaultValue="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev" Name="weburl"></WebPartPages:DataFormParameter><WebPartPages:DataFormParameter ParameterKey="ListID" PropertyName="ParameterValues" DefaultValue="{02E083B6-237F-4B24-AA0F-D883915445CF}" Name="ListID"></WebPartPages:DataFormParameter>
+			</InsertParameters><DeleteParameters><WebPartPages:DataFormParameter ParameterKey="ListItemId" PropertyName="ParameterValues" DefaultValue="0" Name="ListItemId"></WebPartPages:DataFormParameter><WebPartPages:DataFormParameter ParameterKey="weburl" PropertyName="ParameterValues" DefaultValue="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev" Name="weburl"></WebPartPages:DataFormParameter><WebPartPages:DataFormParameter ParameterKey="ListID" PropertyName="ParameterValues" DefaultValue="{02E083B6-237F-4B24-AA0F-D883915445CF}" Name="ListID"></WebPartPages:DataFormParameter>
 			</DeleteParameters>
 </SharePoint:SPDataSource>
 </DataSources>
@@ -34,7 +34,7 @@
 <xsl:stylesheet xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:dsp="http://schemas.microsoft.com/sharepoint/dsp" version="1.0" exclude-result-prefixes="xsl msxsl ddwrt" xmlns:ddwrt="http://schemas.microsoft.com/WebParts/v2/DataView/runtime" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:SharePoint="Microsoft.SharePoint.WebControls" xmlns:ddwrt2="urn:frontpage:internal">
 	<xsl:output method="html" indent="no"/>
 	<xsl:decimal-format NaN=""/>
-	<xsl:param name="dvt_apos">'</xsl:param>
+	<xsl:param name="dvt_apos">&apos;</xsl:param>
 	<xsl:param name="ManualRefresh"></xsl:param>
 	<xsl:variable name="dvt_1_automode">0</xsl:variable>
 	<xsl:template match="/" xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:dsp="http://schemas.microsoft.com/sharepoint/dsp" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" xmlns:SharePoint="Microsoft.SharePoint.WebControls">
@@ -341,6 +341,56 @@
 					<tr>
 						<td width="190px" valign="top" class="ms-formlabel">
 							<H3 class="ms-standardheader">
+								<nobr>ConstructionTaskGUIDResp</nobr>
+							</H3>
+						</td>
+						<td width="400px" valign="top" class="ms-formbody">
+							<xsl:value-of select="@SPFormInternalID"/>
+						</td>
+					</tr>
+					<tr>
+						<td width="190px" valign="top" class="ms-formlabel">
+							<H3 class="ms-standardheader">
+								<nobr>SubmittalRegisterItemGUID</nobr>
+							</H3>
+						</td>
+						<td width="400px" valign="top" class="ms-formbody">
+							<xsl:value-of select="@SubmittalRegisterItemGUID"/>
+						</td>
+					</tr>
+					<tr>
+						<td width="190px" valign="top" class="ms-formlabel">
+							<H3 class="ms-standardheader">
+								<nobr>ReSubmitReady</nobr>
+							</H3>
+						</td>
+						<td width="400px" valign="top" class="ms-formbody">
+							<xsl:value-of select="@ReSubmitReady"/>
+						</td>
+					</tr>
+					<tr>
+						<td width="190px" valign="top" class="ms-formlabel">
+							<H3 class="ms-standardheader">
+								<nobr>FormCC</nobr>
+							</H3>
+						</td>
+						<td width="400px" valign="top" class="ms-formbody">
+							<xsl:value-of select="@FormCC"/>
+						</td>
+					</tr>
+					<tr>
+						<td width="190px" valign="top" class="ms-formlabel">
+							<H3 class="ms-standardheader">
+								<nobr>Form_Status</nobr>
+							</H3>
+						</td>
+						<td width="400px" valign="top" class="ms-formbody">
+							<xsl:value-of select="@Form_Status"/>
+						</td>
+					</tr>
+					<tr>
+						<td width="190px" valign="top" class="ms-formlabel">
+							<H3 class="ms-standardheader">
 								<nobr>RecordDataNewForm</nobr>
 							</H3>
 						</td>
@@ -348,6 +398,28 @@
 							<a href="{substring-before(@RecordDataNewForm, ', ')}">
 								<xsl:value-of select="substring-after(@RecordDataNewForm, ', ')"/>
 							</a>
+						</td>
+					</tr>
+					<tr>
+						<td width="190px" valign="top" class="ms-formlabel">
+							<H3 class="ms-standardheader">
+								<nobr>Record Data State</nobr>
+							</H3>
+						</td>
+						<td width="400px" valign="top" class="ms-formbody">
+							<a href="{substring-before(@Record_x0020_Data_x0020_State, ', ')}">
+								<xsl:value-of select="substring-after(@Record_x0020_Data_x0020_State, ', ')"/>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td width="190px" valign="top" class="ms-formlabel">
+							<H3 class="ms-standardheader">
+								<nobr>ConstructionTaskGUIDSubmit</nobr>
+							</H3>
+						</td>
+						<td width="400px" valign="top" class="ms-formbody">
+							<xsl:value-of select="@ConstructionTaskGUIDSubmit"/>
 						</td>
 					</tr>
 					<tr id="idAttachmentsRow">
@@ -385,11 +457,12 @@
 		</table>
 	</xsl:template>
 </xsl:stylesheet>	</Xsl>
-<DataFields>@ID,ID;@ContentType,Content Type;@Title,Summary;@Modified,Modified;@Created,Created;@Author,Created By;@Editor,Modified By;@_UIVersionString,Version;@Attachments,Attachments;@File_x0020_Type,File Type;@FileLeafRef,Name (for use in forms);@FileDirRef,Path;@FSObjType,Item Type;@_HasCopyDestinations,Has Copy Destinations;@_CopySource,Copy Source;@ContentTypeId,Content Type ID;@_ModerationStatus,Approval Status;@_UIVersion,UI Version;@Created_x0020_Date,Created;@FileRef,URL Path;@ItemChildCount,Item Child Count;@FolderChildCount,Folder Child Count;@AppAuthor,App Created By;@AppEditor,App Modified By;@RD_Num,RD_Num;@RD_Cert_Name,RD_Cert_Name;@RD_Cert_Date,RD_Cert_Date;@RD_Status,RD_Status;@Submitter_Comments,Submitter_Comments;@Reviewer_Comments,Reviewer_Comments;@Record_x0020_Data_x0020_Workflow,Record Data Workflow;@RE_Response_Date,RE_Response_Date;@Submited_Date,Submited_Date;@Form_Rev,Form_Rev;@Submitted_By,Submitted_By;@Submitter_Co,Submitter_Co;@PublishingContactEmail,Contact E-Mail Address;@CompanyNumber,Company Main Phone;@RD_Project_Num,RD_Project_Num;@RD_Designer,RD_Designer;@RD_Project,RD_Project;@RD_Owner_x002F_PCM,RD_Owner/PCM;@RD_Contractor,RD_Contractor;@Contractor_Cert,Contractor_Cert;@RD_Signature,RD_Signature;@SpecNum,SpecNum;@DrawingNum,DrawingNum;@DetailDescription,DetailDescription;@RecordDataNewForm,RecordDataNewForm;@SPFormInternalID,ConstructionTaskGUID;@Record_x0020_Data_x0020_State,Record Data State;@SubmittalRegisterItemGUID,SubmittalRegisterItemGUID;@ReSubmitReady,ReSubmitReady;</DataFields>
+<DataFields>
+</DataFields>
 <ParameterBindings>
 		 <ParameterBinding Name="ListItemId" Location="QueryString(ID)" DefaultValue="0"/>
 		 <ParameterBinding Name="weburl" Location="None" DefaultValue="https://iplnet3.iplsharepoint.com/sites/imt/15-1-Dev"/>
-		 <ParameterBinding Name="ListID" Location="None" DefaultValue="{02e083b6-237f-4b24-aa0f-d883915445cf}"/>
+		 <ParameterBinding Name="ListID" Location="None" DefaultValue="{02E083B6-237F-4B24-AA0F-D883915445CF}"/>
 		 <ParameterBinding Name="dvt_apos" Location="Postback;Connection"/>
 		 <ParameterBinding Name="ManualRefresh" Location="WPProperty[ManualRefresh]"/>
 		 <ParameterBinding Name="UserID" Location="CAMLVariable" DefaultValue="CurrentUserName"/>
