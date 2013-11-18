@@ -308,6 +308,12 @@
 <script type="text/javascript" src="~SiteCollection/_layouts/15/jquery.SPServices-2013.01.js" ></script>
 <script type="text/javascript">
 var $j = jQuery.noConflict(true);
+
+$j(document).ready(function(){
+$j("select[title$='RD_Status'] option[value='New']").each(function() {$j(this).remove(); });
+jQuery("select[title$='RD_Status'] option[value='Submitter to RE']").each(function() {jQuery(this).remove(); });
+}
+
 function PreSaveAction()
 {
   var r=confirm("Are you sure you want to submit this Record Data form?");
