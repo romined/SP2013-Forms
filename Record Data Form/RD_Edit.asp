@@ -310,8 +310,8 @@
 var $j = jQuery.noConflict(true);
 
 $j(document).ready(function(){
-	$j("select[title$='RD_Status'] option[value='New']").each(function() {$j(this).remove()});
-	$j("select[title$='RD_Status'] option[value='Submitter to RE']").each(function() {$j(this).remove()});
+	$j("select[title$='RD_Status'] option[value='New']").remove();
+	$j("select[title$='RD_Status'] option[value='Submitter to RE']").remove();
 });
 
 function PreSaveAction()
