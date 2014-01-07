@@ -1,0 +1,304 @@
+/*GENERIC CSS*/
+html {
+	height: 100%;
+	font-family: "Calibri", sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+input {
+    padding: 0.3em;
+}
+
+#bg {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: rgb(108,129,153); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(108,129,153,1) 0%, rgba(238,238,238,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(108,129,153,1)), color-stop(100%,rgba(238,238,238,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(108,129,153,1) 0%,rgba(238,238,238,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(108,129,153,1) 0%,rgba(238,238,238,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(108,129,153,1) 0%,rgba(238,238,238,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(108,129,153,1) 0%,rgba(238,238,238,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c8199', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */	
+}
+
+#wrapper {
+	width: 800px;
+	min-height: 600px;
+	margin: 0 auto;
+	top: 50px;
+	position: relative;
+	border: 1px solid #999;
+	padding: 20px;
+	text-align: left;
+
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 0%, rgba(232,246,255,1) 47%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(47%,rgba(232,246,255,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(232,246,255,1) 47%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(232,246,255,1) 47%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(232,246,255,1) 47%,rgba(255,255,255,1) 100%); /* IE10+ */
+	background: linear-gradient(135deg,  rgba(255,255,255,1) 0%,rgba(232,246,255,1) 47%,rgba(255,255,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+/*!GENERIC CSS*/
+
+/*UPLOAD FORM*/
+#upload_selection {
+	position: relative;
+	width: 250px;
+	height: 150px;
+	margin-bottom: 20px;
+}
+
+#upload_selection .file_icon {
+	padding: 20px;
+	text-align: center;
+	border: 1px solid #E8F6FF;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+}
+
+#upload_selection .file_icon:hover {
+	border: 1px solid #1e90ff;
+}
+
+#upload_selection .file_icon img {
+	height: 80px;
+	width: 80px;
+	border: 0;
+}
+
+#upload_selection #doc {
+	left: 0;
+}
+
+#upload_selection #set {
+	left: 125px;
+}
+
+#fields_table_wrapper {
+	border: 2px solid #999;
+	width: 740px;
+	position: relative;
+	overflow: auto;
+}
+
+#fields_table {
+	margin: 0;
+	border-spacing: 0;
+}
+#fields_table tr {
+	background-color: #FFFFFF;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#fields_table tr.alt_row {
+	background-color: #F0FAFF;
+}
+
+#fields_table tr td, #fields_table tr th {
+	margin: 0;
+	padding: 10px;
+	border: 0;
+	vertical-align: top;
+	text-align: left;
+}
+
+#fields_table tr .field {
+	width: 200px;
+	border-right: 1px solid #999;
+}
+
+#fields_table tr .value {
+	width: 500px;
+}
+
+.error_msg {
+	background-color: #ff9999;
+	padding: 2px 5px 2px 5px;
+	text-align: center;
+	border: 1px solid #999;
+}
+
+.error_msg.redlight {
+	background-color: #ff0000;
+	
+}
+
+.error_msg, .doc, .set, #fields_table_wrapper {
+	display: none;
+}
+
+#author_list {
+	margin-top: 5px;
+}
+
+#author_list li {
+	background-color: #EEEEEE;
+	padding: 5px;
+	list-style-type: none;
+	margin-left: 20px;
+}
+
+.delete_author {
+	background: url('images/ui-icons_2e83ff_256x240.png') -176px -96px;
+	height: 16px;
+	width: 16px;
+	border: 0;
+	cursor: pointer;
+	float: left;
+}
+
+#date_select {
+	width: 120px;
+}
+
+#set_name {
+	width: 90%;
+}
+/*!UPLOAD FORM*/
+
+/*OVERLAY & PROGRESS WINDOW CSS*/
+#overlay {
+	position: fixed;
+	background-color: #333;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	z-index: 100;
+	
+	/*Cross browser opacity*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	filter: alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+	display: none;
+}
+
+#progress_window {
+	background-color: #d7e6ff;
+	position: absolute;
+	width: 640px;
+	height: 400px;
+	top: 50%;
+	left: 50%;
+	margin: -200px 0 0 -320px;
+	z-index: 101;
+	padding: 20px;
+	display: none;
+	overflow: auto;
+}
+
+#upload_table {
+	border-spacing: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#upload_table tr td, #upload_table tr th {
+	font-size: 1.2em;
+	margin: 0;
+	border: 0;
+	padding: 3px;
+	text-align: left;
+	vertical-align: top;
+}
+
+#upload_table tr th {
+	width: 35px;
+}
+
+#upload_table tr td {
+	width: 205px;
+}
+
+#upload_table tr:nth-child(even) {
+	background-color: #ecfeff;
+}
+
+#continue_button {
+	margin: 10px;
+}
+/*!OVERLAY & PROGRESS WINDOW CSS*/
+
+
+/*REQUIRED FOR CUSTOM COMBOBOX */
+.custom-combobox {
+	position: relative;
+    display: inline-block;
+}
+.custom-combobox-toggle {
+    position: absolute;
+    top: -1px;
+    bottom: 0;
+    margin-left: -1px;
+    padding: 0;
+    height: 30px;
+    /* support: IE7 */
+    *height: 1.7em;
+    *top: 0.1em;
+}
+.custom-combobox-input {
+    margin: 0;
+}
+
+ul.ui-autocomplete {
+	max-height: 400px;
+	overflow: auto;
+}
+/*!REQUIRED FOR CUSTOM COMBOBOX */
+
+/*REQUIRED FOR TICKER*/
+.ticker {
+	position: relative;
+	width: 100px;
+	height: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+.ticker_circle {
+	width: 16px;
+	height: 16px;
+    margin: 0 2px 0 2px;
+	top: 0;
+	position: absolute;
+	background-color: #32cd32;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.ticker_circle.inactive {
+	background-color: #666;
+}
+
+.ticker_circle.complete {
+	background-color: #006400;
+}
+
+.ticker_circle.error {
+	background-color: #ff0000;
+}
+
+.ticker_circle.highlight {
+	background-color: #006400;
+}
+/*!REQUIRED FOR TICKER*/

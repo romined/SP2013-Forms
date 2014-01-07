@@ -1,0 +1,1 @@
+This version is meant to be an individual page on SP. Another version exists as an SP app. The only difference is that the SP app knows its form digest value (for security, passed as a parameter), where this one has to retrieve it itself.
